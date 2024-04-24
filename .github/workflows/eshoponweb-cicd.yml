@@ -50,6 +50,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: buildandtest
+    permissions:
+      id-token: write
     environment:
       name: 'Development'
     steps:
