@@ -52,6 +52,7 @@ jobs:
     needs: buildandtest
     permissions:
       id-token: write
+      contents: read
     environment:
       name: 'Development'
     steps:
